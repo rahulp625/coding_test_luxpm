@@ -38,3 +38,26 @@ Thank you for your interest again. I look forward to hearing from you.
 Best regards.
 
 Young Yu
+
+  
+  
+Steps to run-
+  
+1. Install python3 on your system
+2. Install mysql and create a user and database named after last name.
+3. Install node js on the system  
+3. Clone the repo
+5. Run npm install
+6. Change the config.mysql.js file-Change USER, PASSWORD, HOST, DB as per your database user, password and database name
+7. Run node server.js
+8. With postman, make the following GET request-
+http://localhost:5000/getNewLuxPMword  
+  
+Expected Output-
+{
+    "success": {
+        "newword": "L39u37x35P33M31s29o27f25t"
+    }
+}  
+  
+  

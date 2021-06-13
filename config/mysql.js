@@ -1,6 +1,7 @@
 const Development = {
-    USER: "master",
-    PASSWORD: "",
+    // USER: "master",
+    USER: "rahul",
+    PASSWORD: "password",
 };
 
 const Production = {
@@ -10,8 +11,8 @@ const Production = {
 
 module.exports = {
     ...(process.env.ENV === "prod" ? Production : Development),
-    HOST: "",
-    DB: "",
+    HOST: "localhost",
+    DB: "paul_db",
     dialect: "mysql",
     pool: {
       max: 5,

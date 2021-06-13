@@ -47,7 +47,8 @@ app.use(function (req, res, next) {
 var passports = Passport();
 
 //Routes
-require('./routes/User.routes')(app);
+// require('./routes/User.routes')(app);
+require('./routes/getNewLuxPMword.routes')(app);
 
 const port = process.env.PORT || 5000;  //process.env.port is Heroku's port if you choose to deplay the app there
 app.listen(port, () => console.log("Server up and running on port " + port));
